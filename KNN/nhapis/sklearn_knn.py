@@ -11,7 +11,7 @@ knn.fit(X, y)
 
 x_test = np.array([[3, 2],
                    [4, 5],
-                   [1, 4]])
+                   [10, 10]])
 
 # 预测结果标签
 pred = knn.predict(x_test)
