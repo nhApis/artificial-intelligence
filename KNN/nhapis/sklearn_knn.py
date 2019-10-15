@@ -1,11 +1,11 @@
 import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 
-X = np.array([[1, 1], [1, 1.5], [2, 2], [4, 3], [4, 4]])
-y = np.array(['A', 'A', 'A', 'B', 'B'])
+X = np.array([[1, 1], [1, 1.5], [2, 2], [4, 3], [4, 4], [3, 3]])
+y = np.array(['A', 'A', 'A', 'B', 'B', 'B'])
 
-# n_neighbors 就是K值
-knn = KNeighborsClassifier(n_neighbors=3)
+# n_neighbors 就是K值(K的值，不能大于X的记录行数)
+knn = KNeighborsClassifier(n_neighbors=2)
 # 训练模型
 knn.fit(X, y)
 
