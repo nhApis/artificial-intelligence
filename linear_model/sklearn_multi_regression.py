@@ -24,3 +24,13 @@ print(pred)
 print(model.coef_)
 # 输出回归计算出的截距值
 print(model.intercept_)
+
+# 线性回归算法：y^{(i)}=\theta x^{(i)} + \varepsilon^{(i)}
+#
+#     我们要找到一种算法来求\theta，使模型预测效果最好。
+#     假设误差\varepsilon属于高斯分布，得出误差\varepsilon的概率密度，
+#     公式变换，得到实际值与预测值之间的关系
+#     引入似然函数，即让似然函数的值越大越好
+#     为了方便计算，左右两边取对数
+#     得到线性回归算法的损失函数
+#     针对损失函数优化\theta值
